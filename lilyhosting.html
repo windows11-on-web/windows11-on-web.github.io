@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lilyhosting</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&family=Ubuntu:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    width: 100dvw;
+    height: 100dvh;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffe6e6;
+}
+a {
+    text-decoration: none;
+    color: #0041C2;
+}
+ul {
+    list-style: none;
+}
+button {
+    font-family: inherit;
+}
+.table {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.table-header, .table-description {
+    padding: 10px;
+}
+.nav-button {
+    height: 4rem;
+    width: 20rem;
+    background-color: lightcoral;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+#main-container {
+    display: grid;
+}
+#lander-content {
+    height: 35rem;
+    background: url("https://cdn.pixabay.com/photo/2017/05/22/13/36/water-lily-2334209_960_720.jpg"), rgba(0,0,0,0.4);
+    background-size: cover;
+    background-position: bottom;
+    background-blend-mode: overlay;
+}
+#lander-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+#lander-title {
+    font-size: 4rem;
+    font-family: 'Overpass Mono', monospace;
+}
+#loader-smol-horizontal-line {
+    width: 20rem;
+    margin: 1rem;
+}
+#lander-bio {
+    padding-bottom: 2rem;
+}
+#server-tiers {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+.server-tier {
+    width: 20em;
+}
+.server-tier-title {
+    padding: 1rem;
+}
+.server-spec {
+    border-top: 1px solid white;
+    padding: 1rem;
+}
+#footer-title {
+    font-family: 'Overpass Mono', monospace;
+    padding-bottom: .5rem;
+    font-size: 4rem;
+}
+#footer-bio {
+    padding-bottom: 3rem;
+}
+#footer {
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+#check-out {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#check-out-title {
+    padding: 2rem;
+    font-size: 1.7rem;
+}
+#contact-info {
+    display: grid;
+    padding-top: 2rem;
+    justify-content:space-evenly;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
+    grid-gap: 2rem;
+}
+</style>
+</head>
+<body>
+    <div id="main-container">
+        <div id="lander-content">
+	    <div id="lander-info">
+		<h1 id="lander-title">Lily Hosting</h1>
+		<hr id="loader-smol-horizontal-line">
+		<h3 id="lander-bio">If it works, don't fix it.</h3>
+		<a href="#server-tiers">
+		    <button id="lander-button" class="nav-button">Check out our freshly baked servers! Built with love and care by Katy</button>
+		</a>
+	    </div>
+	</div>
+	<div id="server-tiers">
+	    <div id="free-tier" class="server-tier">
+	        <h2 class=server-tier-title>Free Plans</h2>
+		<div class="table server-spec">
+	            <div class="table-column">
+		        <div class="table-header">ID</div>
+		        <div class="table-header">Price</div>
+		        <div class="table-header">RAM</div>
+		        <div class="table-header">STORAGE</div>
+		        <div class="table-header">CPU</div>
+		    </div>
+		    <div class="table-column">
+		        <div class="table-description">Devloper Free Plan</div>
+		        <div class="table-description">Free [With card req]</div>
+		        <div class="table-description">16GB</div>
+		        <div class="table-description">512GB SSD</div>
+		        <div class="table-description">Intel i5 11600K | 4 cores</div>
+	             </div>
+	        </div>
+		<div class="table server-spec">
+	            <div class="table-column">
+		        <div class="table-header">Name</div>
+		        <div class="table-header">Price</div>
+		        <div class="table-header">RAM</div>
+		        <div class="table-header">STORAGE</div>
+		        <div class="table-header">CPU</div>
+		    </div>
+		    <div class="table-column">
+		        <div class="table-description">Personal Free Server</div>
+		        <div class="table-description">Free [No billing or card]</div>
+		        <div class="table-description">4GB</div>
+		        <div class="table-description">256GB SSD</div>
+		        <div class="table-description">Intel i5 7500U | 1 core </div>
+	             </div>
+	        </div>
+
+	    </div>
+	    <div id="paid-tier" class="server-tier">
+	        <h2 class=server-tier-title>Paid Plans</h2>
+		<div class="table server-spec">
+	            <div class="table-column">
+		        <div class="table-header">ID</div>
+		        <div class="table-header">Price</div>
+		        <div class="table-header">RAM</div>
+		        <div class="table-header">STORAGE</div>
+		        <div class="table-header">CPU</div>
+		    </div>
+		    <div class="table-column">
+		        <div class="table-description">Personal Mid Paid Server</div>
+		        <div class="table-description">200 USD / year</div>
+		        <div class="table-description">24 GB</div>
+		        <div class="table-description">2 TB SSD</div>
+		        <div class="table-description">AMD Ryzen 7 7800X | 6 cores </div>
+	             </div>
+	        </div>
+	    </div>
+	</div>
+	<div id="check-out">
+	    <h2 id="check-out-title">Check out our warm communities:</h2>
+            <div id="contact-info">
+	        <a href="#"><button class="nav-button">Discord Community</button></a>
+		<a href="#"><button class="nav-button">Telegram Community</button></a>
+		<a href="#"><button class="nav-button">Slack Community</button></a>
+	    </div>
+	</div>
+	<div id="footer">
+	    <h1 id="footer-title">Lilyhosting</h2>
+	    <h3 id="footer-bio">We look forward to work with you!</h3>
+            <h4 id="footer-credit"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/devops117/demo-lilyhosting-landing-page">demo-lilyhosting-landing-page</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/devops117">devops117</a></h4>
+	    <h4 id="footer-license">licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">CC BY-SA 4.0</a></h4>
+	</div>
+    </div>
+</body>
+</html>
+
